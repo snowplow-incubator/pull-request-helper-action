@@ -28,7 +28,7 @@ jobs:
 ```
 
 ## What happens when the workflow is triggered?
-When a pull request is opened from `issue` branch to `release` branch, the default PR title is the most recent commit in the issue branch.
+When a pull request is opened from `issue` branch to `release` branch, the default PR title is the issue branch commit message, or issue branch name if there is more than one commit.
 
 Example PR before the Action runs:  
 
@@ -84,7 +84,7 @@ jobs:
 
   link-pr-issue:
     runs-on: ubuntu-latest
-    if: github.event_name == "pull_request"
+    if: github.event_name == 'pull_request'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
