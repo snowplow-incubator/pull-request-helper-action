@@ -31,6 +31,7 @@ jobs:
 When a pull request is opened from `issue` branch to `release` branch, the default PR title is the most recent commit in the issue branch.
 
 Example PR before the Action runs:  
+
 ![before](public/before.png)
 
 This Action finds the issue number in the issue branch name, e.g. issue #123 from branch `issue/123-words`, and then does two things:
@@ -40,9 +41,11 @@ This Action finds the issue number in the issue branch name, e.g. issue #123 fro
 The comment will show up as a mention in the issue, meaning that the linked PR can be easily found.
 
 Example PR after the Action runs:
+
 ![after](public/after.png)
 
 The example issue:  
+
 ![issue after](public/issue_after.png)
 
 The status labels here were added by the [Labels Helper Action](https://github.com/snowplow-incubator/labels-helper-action) - see below.
