@@ -1,0 +1,5 @@
+name: "Pull Request Helper"
+description: "One issue, one PR? Link them together easily with this Action."
+runs:
+  using: "node16"
+  main: "index.js"
